@@ -104,25 +104,32 @@ function initFormHandler() {
 
 // Mobile menu events SATRT
 function initMobileMenu() {
+  var freezeVp = function(e) {
+    e.preventDefault();
+  };
+
+  function stopBodyScrolling (bool) {
+    if (bool === true) {
+        document.body.addEventListener("touchmove", freezeVp, false);
+    } else {
+        document.body.removeEventListener("touchmove", freezeVp, false);
+    }
+  }
+
   $('.account-dropdown-btn').click(function() {
     $('.nav-mob').toggleClass('open');
-    $('.wrapper.restaurants-page').addClass('unscroll').css({
-      height: $('#nav-mob').height()
-    })
-
+    $('body').addClass('unscroll')
+    stopBodyScrolling(true);
   })
-
-
 
   $('.nav-mob .my-dropdown-menu-overlay, .nav-mob .cross-btn').click(function() {
     $('.nav-mob').removeClass('open');
-    $('.wrapper.restaurants-page').removeClass('unscroll').css({
-      height: 'auto'
-    })
+    $('body').removeClass('unscroll');
+    stopBodyScrolling(false);
   })
 
   $('.for-business-dropdown, .for-restaurants-dropdown').click(function() {
-    $(this).toggleClass('open')
+    $(this).toggleClass('open');
   })
 }
 // Mobile menu events END
