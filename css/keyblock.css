@@ -350,9 +350,11 @@ a {
   .rest_page-header.scrolling .my-dropdown .icon {
     fill: #000; }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .rest_page-header {
     padding: 15px 30px; }
+    .rest_page-header .mobile-view {
+      display: block; }
     .rest_page-header .logo {
       margin: auto;
       width: 40px;

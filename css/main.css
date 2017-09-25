@@ -1975,7 +1975,7 @@ footer .bot-link:hover {
     padding: 50px 35px; } }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   body {
     line-height: 25px; }
   .content-wrapper {
