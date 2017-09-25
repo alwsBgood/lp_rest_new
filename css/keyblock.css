@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: #383434; }
 
-.wrapper.restaurants-page.unscroll {
+body.unscroll {
   overflow: hidden; }
 
 a {
