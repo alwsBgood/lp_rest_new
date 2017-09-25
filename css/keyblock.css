@@ -13,9 +13,12 @@ body {
   padding: 0;
   color: #383434; }
 
-.wrapper.restaurants-page.unscroll {
-  overflow: hidden;
-  position: fixed; }
+body.unscroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 a {
   color: #383434; }

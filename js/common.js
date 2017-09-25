@@ -104,22 +104,15 @@ function initFormHandler() {
 
 // Mobile menu events SATRT
 function initMobileMenu() {
-  var currentPosition = 0;
 
   $('.account-dropdown-btn').click(function() {
-    currentPosition = $(window).scrollTop();
     $('.nav-mob').toggleClass('open');
-    $('.wrapper.restaurants-page').addClass('unscroll').css({
-      height: $('#nav-mob').height()
-    })
+    $('body').addClass('unscroll')
   })
 
   $('.nav-mob .my-dropdown-menu-overlay, .nav-mob .cross-btn').click(function() {
     $('.nav-mob').removeClass('open');
-    $('.wrapper.restaurants-page').removeClass('unscroll').css({
-      height: 'auto'
-    })
-    $(window).scrollTop(currentPosition);
+    $('body').removeClass('unscroll')
   })
 
   $('.for-business-dropdown, .for-restaurants-dropdown').click(function() {
