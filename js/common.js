@@ -106,7 +106,7 @@ function initFormHandler() {
 function initMobileMenu() {
   $('.account-dropdown-btn').click(function() {
     $('.nav-mob').toggleClass('open');
-    $('body').addClass('unscroll').css({
+    $('.wrapper.restaurants-page').addClass('unscroll').css({
       height: $('#nav-mob').height()
     })
 
@@ -116,7 +116,7 @@ function initMobileMenu() {
 
   $('.nav-mob .my-dropdown-menu-overlay, .nav-mob .cross-btn').click(function() {
     $('.nav-mob').removeClass('open');
-    $('body').removeClass('unscroll').css({
+    $('.wrapper.restaurants-page').removeClass('unscroll').css({
       height: 'auto'
     })
   })
