@@ -106,12 +106,19 @@ function initFormHandler() {
 function initMobileMenu() {
   $('.account-dropdown-btn').click(function() {
     $('.nav-mob').toggleClass('open');
-    $('body').addClass('unscroll')
+    $('body').addClass('unscroll').css({
+      height: $('#nav-mob').height()
+    })
+
   })
+
+
 
   $('.nav-mob .my-dropdown-menu-overlay, .nav-mob .cross-btn').click(function() {
     $('.nav-mob').removeClass('open');
-    $('body').removeClass('unscroll')
+    $('body').removeClass('unscroll').css({
+      height: 'auto'
+    })
   })
 
   $('.for-business-dropdown, .for-restaurants-dropdown').click(function() {

@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: #383434; }
 
-body.unscroll {
+.wrapper.restaurants-page.unscroll {
   overflow: hidden; }
 
 a {
@@ -269,7 +269,12 @@ a {
     .rest_page-block_01 .rest_page-press_logo {
       max-width: 25%;
       min-width: 60px;
-      padding: 0 8px; } }
+      padding: 0 8px;
+      -webkit-flex: 0 1 25%;
+      -moz-flex: 0 1 25%;
+      -ms-flex: 0 1 25%;
+      -webkit-box-flex: 0;
+      flex: 0 1 25%; } }
 
 @media screen and (max-width: 650px) {
   .rest_page-block_01.bg-cover {
