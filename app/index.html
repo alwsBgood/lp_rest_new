@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Allset for Restaurants</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta property="og:description" content="" />
+
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+    <meta property="og:site_name" content="CompanyName"/>
+    <meta property="og:title" content="" />
+    <meta property="og:url" content=""/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- RESET -->
+    <style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{box-sizing:border-box}html,body{margin:0;width:100%}.container{max-width:1200px;margin:0 auto}a,button,img,input{-webkit-transition:all .5s;transition:all .5s}button,button:active,button:focus,input,input:active,input:focus,textarea,textarea:active,textarea:focus{outline:none}button,button:hover,a,a:hover{text-decoration:none;cursor:pointer}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container:before,.container:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container:after{clear:both}.left{float:left}.right{float:right}.tl{text-align:left}.tr{text-align:right}.tc{text-align:center}.flex{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center}a,button,input,textarea{text-decoration:none;outline:0;border:0;-webkit-transition:color .4s ease,background-color .4s ease,background-image .4s ease,border-color .4s ease;transition:color .4s ease,background-color .4s ease,background-image .4s ease,border-color .4s ease}a:focus,button:focus,input:focus,textarea:focus{outline:0}input,textarea{-webkit-box-sizing:border-box;box-sizing:border-box}textarea{resize:none}button:hover,a:hover{cursor:pointer}.cf:after,.cf:before{content:" ";display:table}.cf:after{clear:both}</style>
+
+    <!-- FONTS+HEADER -->
+    <style>@font-face{font-family:GothamProRegular;font-style:normal;font-weight:400;src:url(fonts/GothamProRegular/GothamProRegular.woff2) format("woff2"),url(fonts/GothamProRegular/GothamProRegular.woff) format("woff")}@font-face{font-family:GothamProMedium;font-style:normal;font-weight:500;src:url(fonts/GothamProMedium/GothamProMedium.woff2) format("woff2"),url(fonts/GothamProMedium/GothamProMedium.woff) format("woff")}@font-face{font-family:GothamProLight;font-style:normal;font-weight:300;src:url(fonts/GothamProLight/GothamProLight.woff2) format("woff2"),url(fonts/GothamProLight/GothamProLight.woff) format("woff")}@font-face{font-family:icomoon;src:url(fonts/icomoon/icomoon.eot?4k3kpb);src:url(fonts/icomoon/icomoon.eot?4k3kpb#iefix) format("embedded-opentype"),url(fonts/icomoon/icomoon.ttf?4k3kpb) format("truetype"),url(fonts/icomoon/icomoon.woff?4k3kpb) format("woff"),url(fonts/icomoon/icomoon.svg?4k3kpb#icomoon) format("svg");font-weight:400;font-style:normal}</style>
+
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>!function(a){"use strict";function b(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function c(b,c){return a.localStorage&&localStorage[b+"_content"]&&localStorage[b+"_file"]===c}function d(b,d){if(a.localStorage&&a.XMLHttpRequest)c(b,d)?f(localStorage[b+"_content"]):e(b,d);else{var h=g.createElement("link");h.href=d,h.id=b,h.rel="stylesheet",h.type="text/css",g.getElementsByTagName("head")[0].appendChild(h),g.cookie=b}}function e(a,b){var c=new XMLHttpRequest;c.open("GET",b,!0),c.onreadystatechange=function(){4===c.readyState&&200===c.status&&(f(c.responseText),localStorage[a+"_content"]=c.responseText,localStorage[a+"_file"]=b)},c.send()}function f(a){var b=g.createElement("style");b.setAttribute("type","text/css"),g.getElementsByTagName("head")[0].appendChild(b),b.styleSheet?b.styleSheet.cssText=a:b.innerHTML=a}var g=a.document;a.loadCSS=function(a,b,c){var d,e=g.createElement("link");if(b)d=b;else{var f;f=g.querySelectorAll?g.querySelectorAll("style,link[rel=stylesheet],script"):(g.body||g.getElementsByTagName("head")[0]).childNodes,d=f[f.length-1]}var h=g.styleSheets;e.rel="stylesheet",e.href=a,e.media="only x",d.parentNode.insertBefore(e,b?d:d.nextSibling);var i=function(a){for(var b=e.href,c=h.length;c--;)if(h[c].href===b)return a();setTimeout(function(){i(a)})};return e.onloadcssdefined=i,i(function(){e.media=c||"all"}),e},a.loadLocalStorageCSS=function(e,f){c(e,f)||g.cookie.indexOf(e)>-1?d(e,f):b(a,"load",function(){d(e,f)})}}(this);</script>
+
+    <link rel="stylesheet" href="./css/keyblock.css">
+    <!-- Load CSS Start -->
+    <script>loadCSS( "css/main.css?ver=1.0.0", false, "all" );</script>
+    <!-- Load CSS End -->
+
+    <!-- Load CSS Compiled without JS -->
+    <noscript>
+        <link rel="stylesheet" href="css/main.css">
+    </noscript>
+
+</head>
+<body data-img='./img/land.png'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <div class="wrapper restaurants-page main-content not-authorized">
+
+        <!-- Block_01 start -->
+        <div class="rest_page-block_01 flexbox flex-vertical justify-space-between bg-cover">
+
+            <header class="cf rest_page-header flexbox">
+                <div class="nav-item my-dropdown account-dropdown-btn with-blur mobile-view">
+                    <button class="my-dropdown-title btn mobile-nav-btn">
+                        <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g class="icon">
+                                    <g id="icons/ic_settings" transform="translate(2.000000, 5.000000)">
+                                        <rect id="Rectangle" x="0" y="0" width="20" height="2" rx="1"></rect>
+                                        <rect id="Rectangle" x="0" y="6" width="16" height="2" rx="1"></rect>
+                                        <rect id="Rectangle" x="0" y="12" width="12" height="2" rx="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="logo">
+                    <a class="logo-link" href="/">
+                        <span class="icon icon-nav_logo"></span>
+                    </a>
+                </div>
+
+                <ul class="nav_list flexbox">
+                    <li class="nav_item"><a href="/restaurants/faq/" >FAQ</a></li>
+                    <li class="nav_item"><a href="https://allsetnow.com/corporate/auth/">Dashboard</a></li>
+                    <li class="nav_item"><a href="https://medium.com/@allset">Blog</a></li>
+                </ul>
+
+                <button href="#form_anchor" class="btn scroll btn-red anchor_btn flexbox align-items-center justify-center">Submit an Inquiry</button>
+
+            </header>
+
+            <div class="content-wrapper">
+                <div class="rest_page-block_01-content ">
+                    <h1 class="main_header text--white">More guests, <br> inside your restaurant.
+                    </h1>
+                    <p class="main_header-descr text--white">We help busy people choose to dine at your restaurant <br> over delivery, takeout, and in-office meals.</p>
+                    <a href="#form_anchor" class="scroll btn btn-red block_btn">Submit an Inquiry</a>
+                </div>
+
+                <div class="rest_page-block_01-press_block flexbox justify-space-between align-items-center">
+                    <div class="rest_page-press_logo eater-logo">
+                        <a target='_blank' rel="noreferrer"  href="https://www.eater.com/2016/3/10/11191556/allset-app"><img src="./img/logo_press_1.png" srcset="./img/logo_press_1@2x.png 2x" alt="EATER"></a>
+                    </div>
+                    <div class="rest_page-press_logo ent-logo">
+                        <a target='_blank' rel="noreferrer" href="https://www.entrepreneur.com/article/254660"><img src="./img/logo_press_2.png" srcset="./img/logo_press_2@2x.png 2x" alt="Entrepreneur"></a>
+                    </div>
+                    <div class="rest_page-press_logo bi-logo">
+                        <a target='_blank' rel="noreferrer" href="http://www.businessinsider.com/allset-facebook-messenger-chat-bot-book-lunch-2016-7"><img src="./img/logo_press_3.png" srcset="./img/logo_press_3@2x.png 2x" alt="Business Insider"></a>
+                    </div>
+                    <div class="rest_page-press_logo wsj-logo">
+                        <a target='_blank' rel="noreferrer" href="https://www.wsj.com/articles/allset-raises-2-35m-to-speed-up-restaurant-lunches-1474383600"><img src="./img/logo_press_4.png" srcset="./img/logo_press_4@2x.png 2x" alt="WSJ"></a>
+                    </div>
+                    <div class="rest_page-press_logo tc-logo">
+                        <a target='_blank' rel="noreferrer" href="https://techcrunch.com/2016/02/03/allset-nyc-launch/"><img src="./img/logo_press_5.png" srcset="./img/logo_press_5@2x.png 2x" alt="TechCrunch"></a>
+                    </div>
+                    <div class="rest_page-press_logo forbes-logo">
+                        <a target='_blank' rel="noreferrer"  href="https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/steveolenski/2015/11/24/new-mobile-apps-are-delivering-customized-services/&refURL=&referrer=#7b38747ca249"><img src="./img/logo_press_6.png" srcset="./img/logo_press_6@2x.png 2x" alt="Forbes"></a>
+                    </div>
+                    <div class="rest_page-press_logo thp-logo">
+                        <a target='_blank' rel="noreferrer" href="http://www.huffingtonpost.com/john-rampton/how-to-promote-your-resta_b_8342924.html"><img src="./img/logo_press_7.png" srcset="./img/logo_press_7@2x.png 2x" alt="The Huffington Post"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Block_01 end -->
+
+        <!-- Block_02 start -->
+        <div class="rest_page-block_02 gray-bg">
+            <div class="content-wrapper">
+                <div class="block_02-testimonial_wrapper flexbox align-items-center">
+                    <img src="./img/img_testimonial.png" srcset="./img/img_testimonial@2x.png 2x" alt="Testimonial" class="testimonial-img">
+
+                    <div class="testimonial-wrap">
+                        <p class="text">“Allset's clever combination of restaurant reservations and meal pre-ordering definitely works for us. Through Allset, we can bring the real Obicà's experience to people who didn't have time to visit us before.”</p>
+                        <p class="text--bold text--dark testimonial-name">Thomasz Richardson</p>
+                        <p class="text">General Manager at Obicà Mozzarella Bar</p>
+                    </div>
+                </div>
+                <div class="block_02-partners_wrapper">
+                    <div class="partners_header_wrapper">
+                        <h2 class="header">Our partners</h2>
+                        <p class="header_descr-text text--gray">We’ve served 500,000+ orders in 9 cities, partnering with 600+ local restaurants.</p>
+                    </div>
+                    <div class="partners_logo_wrapper flexbox justify-space-between align-items-center">
+                        <div class="rest_page-partners-logo eater-logo">
+                            <img src="./img/logo_partner_1.png" srcset="./img/logo_partner_1@2x.png 2x" alt="BLACK BARN">
+                        </div>
+                        <div class="rest_page-partners-logo ent-logo">
+                            <img src="./img/logo_partner_2.png" srcset="./img/logo_partner_2@2x.png 2x" alt="OBICA">
+                        </div>
+                        <div class="rest_page-partners-logo bi-logo">
+                            <img src="./img/logo_partner_3.png" srcset="./img/logo_partner_3@2x.png 2x" alt="Le coq Rico Insider">
+                        </div>
+                        <div class="rest_page-partners-logo wsj-logo">
+                            <img src="./img/logo_partner_4.png" srcset="./img/logo_partner_4@2x.png 2x" alt="COSME">
+                        </div>
+                        <div class="rest_page-partners-logo tc-logo">
+                            <img src="./img/logo_partner_5.png" srcset="./img/logo_partner_5@2x.png 2x" alt="La mar">
+                        </div>
+                        <div class="rest_page-partners-logo forbes-logo">
+                            <img src="./img/logo_partner_6.png" srcset="./img/logo_partner_6@2x.png 2x" alt="GRACIAS MADRE">
+                        </div>
+                        <div class="rest_page-partners-logo thp-logo">
+                            <img src="./img/logo_partner_7.png" srcset="./img/logo_partner_7@2x.png 2x" alt="MAX BRENNER">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Block_02 end -->
+
+        <!-- Block_03 start -->
+        <div class="rest_page-block_03">
+            <div class="rest_page-steps_wrapper content-wrapper">
+                <h2 class="header">How Allset works</h2>
+                <p class="header_descr-text text--gray">We send orders that are already pre-paid and pre-tipped.</p>
+                <div class="rest_page-steps flexbox justify-space-between">
+                    <div class="step_wrapper">
+                        <img src="./img/img_how_works_1.png" srcset="./img/img_how_works_1@2x.png 2x" alt="Guests use Allset to book a table and order their meal ahead of time." class="step-img step-img-1">
+                        <p class="step_descr">Guests use Allset to book a table <br class="mobile-view"> and order their meal ahead of time. </p>
+                    </div>
+                    <div class="step_wrapper">
+                        <img src="./img/img_how_works_2.png" srcset="./img/img_how_works_2@2x.png 2x" alt="We send you the reservation and order details." class="step-img step-img-2">
+                        <p class="step_descr">We send you the reservation <br class="mobile-view"> and order details.</p>
+                    </div>
+                    <div class="step_wrapper">
+                        <img src="./img/img_how_works_3.png" srcset="./img/img_how_works_3@2x.png 2x" alt="You seat and serve food to guests upon arrival." class="step-img step-img-3">
+                        <p class="step_descr">You seat and serve food to <br class="mobile-view"> guests upon arrival.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rest_page-form_wrapper content-wrapper">
+                <form class="subscribe-form validate_form">
+                    <!-- Hidden required fields satrt -->
+                    <input type="hidden" name="send_adress" value="https://allsetnow.com/api/user/v1/application/">
+                    <!-- Hidden required fields end -->
+                    <div class="flexbox justify-center align-items-center input_block-wrapper">
+                        <div class="input_block_label text--light">To learn more about Allset for Restaurants</div>
+                        <div class="input_block form_input_block flexbox">
+                            <input name="email" type="email" placeholder="Enter your email" required class="input_block_input validate_input">
+                            <button type="submit" class="btn input_block_btn validate_btn">
+                                <span class="text">Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="submit-info flexbox justify-center align-items-center">
+                        Confirmed! <br class="mobile-view"> We've added you to our list.
+                    </div>
+                </form>
+
+                <p class="text--dark text-descr">Or <a class="scroll text--orange" href="#form_anchor">submit an inquiry</a> and start a free trial today.</p>
+            </div>
+        </div>
+        <!-- Block_03 end -->
+
+        <!-- Block_04 start -->
+        <div class="rest_page-block_04">
+            <div class="content-wrapper">
+                <h2 class="header">Why Allset?</h2>
+                <div class="flexbox justify-space-between rest_page-block_04-content-wrapper">
+                    <div class="rest_page-block_04-item">
+                        <img src="./img/ic_morereserv.svg" alt="">
+                        <p class="title">More reservations and orders</p>
+                        <p class="text">Fill more seats with new guests who <br> didn’t have time to visit you before.</p>
+                    </div>
+                    <div class="rest_page-block_04-item">
+                        <img src="./img/ic_corpguests.svg" alt="">
+                        <p class="title">Corporate guests</p>
+                        <p class="text">Bring in local offices inside your restaurant <br> for meetings and employee meals.</p>
+                    </div>
+                </div>
+                <div class="flexbox justify-space-between rest_page-block_04-content-wrapper">
+                    <div class="rest_page-block_04-item">
+                        <img src="./img/ic_experiences.svg" alt="">
+                        <p class="title">Enhanced dining experiences</p>
+                        <p class="text">Treat your guests to VIP service from start <br> to finish and make them want to return.</p>
+                    </div>
+                    <div class="rest_page-block_04-item">
+                        <img src="./img/ic_easy.svg" alt="">
+                        <p class="title">Easy to use</p>
+                        <p class="text">We will send you reservations and pre-paid <br> orders over the app, email, fax, or text message.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Block_04 end -->
+
+        <!-- Block_05 start -->
+        <div class="rest_page-block_05  gray-bg" id="form_anchor">
+            <div class="content-wrapper">
+            <div class="form_wrapper">
+                <div class="main_info_wrapper">
+                    <h2 class="header">Grow your business with Allset</h2>
+                    <p class="header_descr text--gray ">Tell us a little about your restaurant, and we’ll provide you <br> with more information about Allset for Restaurants.</p>
+                    <form data-form-type='redirect_form' class="validate_form  getstarted cf">
+                        <!-- Hidden required fields satrt -->
+                        <input type="hidden" name="send_adress" value="https://allsetnow.com/api/merchant/v1/application/">
+                        <!-- Hidden required fields end -->
+                        <div class="flexbox form_content-wrapper justify-space-between">
+                            <div class="form-group left_fl">
+                                <div class="form_input_block input_block flex-vertical flexbox align-items-center">
+                                    <input type="text" class="input_block_input validate_input" placeholder="Contact Name" name="contact_name" required="" >
+                                    <p class="empty_field_text">Please enter your name.</p>
+                                </div>
+                                <div class="form_input_block input_block flex-vertical flexbox align-items-center">
+                                    <input type="email" class="input_block_input validate_input" placeholder="Email Address" name="email" required="" >
+                                    <p class="empty_field_text">Please enter your email.</p>
+                                    <p class="error_field_text">Hmm, are you sure this email is correct?</p>
+                                </div>
+                                <div class="form_input_block input_block flex-vertical flexbox align-items-center">
+                                    <input type="tel" class="input_block_input validate_input" placeholder="Phone Number" name="phone" required="" >
+                                    <p class="empty_field_text">Please enter your phone number.</p>
+                                    <p class="error_field_text">Hmm, are you sure this  phone number is correct?</p>
+                                </div>
+                            </div>
+                            <div class="form-group right_fl">
+                                <div class="form_input_block input_block flex-vertical flexbox align-items-center">
+                                        <input type="text" class="input_block_input validate_input" name="restaurant_name" placeholder="Restaurant Name" required="" >
+
+                                        <p class="empty_field_text">Please enter your Restaurant name.</p>
+                                    </div>
+                                    <div class="form_input_block input_block flex-vertical flexbox align-items-center">
+                                        <input type="text" class="input_block_input validate_input" name="url" placeholder="Restaurant Website" required="" >
+                                        <p class="empty_field_text">Please enter your Restaurant website.</p>
+                                    </div>
+                                <div class="form_input_block select_input_block flex-vertical input_block flexbox align-items-center">
+                                    <input required="" type="hidden" name="found_us" value="">
+                                    <div class="select-input">
+                                        <span class="icon icon-chevron-down"></span>
+                                        <div class="input_block_input select_input-placeholder">
+                                            <span>How did you hear about us?</span>
+                                        </div>
+                                        <div class="my-dropdown-menu-overlay"></div>
+                                    </div><div class="block-item-selection">
+                                        <div class="item-option">Friend</div>
+                                        <div class="item-option">Search</div>
+                                        <div class="item-option">Press article</div>
+                                        <div class="item-option">Online ad</div>
+                                        <div class="item-option">In-store ad</div>
+                                        <div class="item-option">Social media</div>
+                                        <div class="item-option item-option_other">Other</div>
+                                    </div>
+                                    <div class="input_block other_field_block">
+                                        <div class="item-option--other-group">
+                                            <textarea class="input_block input_block_input item-option--other-input" maxlength="200" name="other_specify_text" placeholder="Please specify"></textarea>
+                                        </div>
+                                    </div>
+                                    <p class="empty_field_text">Please select one of the option.</p>
+                                    <p class="error_field_text">Please specify how did you hear about us.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn-red btn validate_btn" type="submit"><span class="text">Submit</span></button>
+                        <div class="btn-red btn-loader">
+                            <img src="https://allsetnow.com/static/merchant_dashboard/images/loaders/spinner.gif" />
+                        </div>
+                    </form>
+
+                    <p class="rest_page-form_descr"><span class="text--bold">Free setup & first month free for your restaurant.</span> No long-term <br> contracts or obligations. Start (or cancel) at any time.</p>
+                </div>
+            </div>
+
+            <p class="rest_block-contacts">Questions? Contact us at <a href="tel:+14158123844" class="text--orange">+1 (415) 812-3844</a> or <a href="mailto:restaurants@allsetnow.com" class="text--orange">restaurants@allsetnow.com.</a></p>
+            </div>
+        </div>
+        <!-- Block_05 end -->
+
+        <!-- Footer block start-->
+        <footer>
+	    	<div class="content-wrapper flexbox justify-space-between flex-wrap">
+	    		<div class="footer-column footer-column--logo">
+	    			<div class="logo">
+		                <a class="logo-link" href="/">
+		                    <span class="icon icon-nav_logo"></span>
+		                </a>
+		            </div>
+		            <div class="copyright">
+		            	&copy; 2017 Allset Technologies Inc.
+		            </div>
+	    		</div>
+	    		<div class="footer-column footer-column--allset">
+	    			<div class="footer-column_title">ALLSET</div>
+	    			<ul class="footer-column_list">
+	    				<li><a href="/faq/" class="footer-column_list-item">FAQ</a></li>
+	    				<li><a href="/about/" class="footer-column_list-item">About</a></li>
+	    				<li><a href="/terms/" class="footer-column_list-item">Terms &amp; Privacy</a></li>
+	    			</ul>
+	    		</div>
+	    		<div class="footer-column footer-column--partnet">
+	    			<div class="footer-column_title">PARTNET WITH US</div>
+	    			<ul class="footer-column_list">
+	    				<li><a href="https://allsetnow.com/for-business/" class="footer-column_list-item">For Business</a></li>
+	    				<li><a href="https://allsetnow.com/for-restaurants/" class="footer-column_list-item">For Restaurants</a></li>
+	    			</ul>
+	    		</div>
+	    		<div class="footer-column footer-column--contacts">
+	    			<div class="footer-column_title">CONNECT WITH US</div>
+	    			<ul class="footer-column_list">
+	    				<li><a href="https://medium.com/@allset" class="footer-column_list-item" target="_blank" rel="nofollow noopener noreferrer">Blog</a></li>
+	    				<li class="contact-btn-wrapper">
+	    					<a href="https://www.facebook.com/allsetnow" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-fb"></span>
+	    					</a>
+	    					<a href="https://twitter.com/allsetUS" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-twitter"></span>
+	    					</a>
+	    					<a href="https://www.instagram.com/allsetnow/" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-instagram"></span>
+	    					</a>
+	    					<a href="mailto:support@allsetnow.com" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-envelope-shape"></span>
+	    					</a>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<div class="footer-column footer-column--apps">
+	    			<ul class="footer-column_list">
+	    				<li>
+	    					<a href="https://itunes.apple.com/US/app/id1016005447?mt=8" class="app-link flexbox align-items-center" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-apple flex-shrink-none"></span>
+	    						<span class="text">iOS App</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="https://play.google.com/store/apps/details?id=com.allset.client&referrer=af_tranid%3D6DXXhAf4I6SdMH0OVi2UwQ%26pid%3DWebsite%26c%3Dallsetnow.com" class="app-link flexbox align-items-center" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-android flex-shrink-none"></span>
+	    						<span class="text">Android App</span>
+	    					</a>
+	    				</li>
+	    				<li>
+	    					<a href="https://m.me/allsetnow" class="bot-link flexbox align-items-center" target="_blank" rel="nofollow noopener noreferrer">
+	    						<span class="icon icon-facebook-messenger flex-shrink-none"></span>
+	    						<span class="text">Facebook Messenger Bot</span>
+	    					</a>
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+        </footer>
+        <!-- Footer block end-->
+
+    </div>
+
+    <div class="nav-mob my-dropdown with-blur" data-modal="nav-mob" id="nav-mob">
+        <div class="my-dropdown-menu-overlay"></div>
+        <div class="my-dropdown-menu">
+            <div class="nav-mob-content-wrapper">
+                <button class="my-dropdown-item btn cross-btn">
+                    <span class="icon icon-close"></span>
+                </button>
+
+                <div class="profile-auth not-authorized-show">
+                    <a class="nav-item btn auth-btn text--light" href="/">Home</a>
+                    <a class="nav-item btn auth-btn text--light" href="https://allsetnow.com/order/">Find Restaurants</a>
+                    <a href="https://allsetnow.com/order/auth/#sign-in" class="nav-item btn auth-btn text--bold">Log In</a>
+                    <a href="https://allsetnow.com/order/auth/#sign-up" class="nav-item btn auth-btn text--bold">Sign Up</a>
+                </div>
+
+                <ul class="profile-mob-nav profile-mob-nav_tab-list not-authorized-hide">
+                    <li class="profile_tab profile_tab_link">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="profile_tab profile_tab_link">
+                        <a href="address_list.html">Find Restaurants</a>
+                    </li>
+                    <li class="my-dropdown-item profile_tab"
+                        data-section="profile_history-sect"
+                        data-href="/order/profile/#orders">
+                        Orders
+                    </li>
+                    <li class="my-dropdown-item profile_tab"
+                        data-section="profile_sets-sect"
+                        data-href="/order/profile/#settings">
+                        Settings
+                    </li>
+                    <li class="my-dropdown-item profile_tab"
+                        data-section="profile_payment-sect"
+                        data-href="/order/profile/#payment">
+                        Payment Method
+                    </li>
+                    <li class="my-dropdown-item profile_tab"
+                        data-section="profile_promo-sect"
+                        data-href="/order/profile/#promotions">
+                        Promotions
+                    </li>
+                    <li class="my-dropdown-item profile_tab light-text"
+                        data-href="/order/profile/#promotions"
+                        data-section="profile_promo-sect">
+                            Promotions-web
+                        </li>
+                    <li class="my-dropdown-item profile_tab"
+                        data-section="profile_give-get-sect"
+                        data-href="/order/profile/#share">
+                        Give $50, Get $10
+                    </li>
+                    <li class="my-dropdown-item profile_tab"
+                        data-section="profile_help-sect"
+                        data-href="/order/profile/#help">
+                        Help
+                    </li>
+                    <li class="my-dropdown-item log-out_btn">
+                        <button type="button" class="btn" data-href="/order/logout/">
+                            <span class="icon icon-logout"></span>
+                            Log out
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="allset-mob-nav">
+                    <div class="allset-mob-nav_item my-dropdown with-blur" data-modal="get-app-modal">
+                        <button class="btn link-app-btn my-dropdown-title"><span>Get the app</span></button> 
+                    </div>
+                    <div class="allset-mob-nav_item">
+                        <div class="my-dropdown for-business-dropdown" data-modal="for-business-dropdown" id="for-business-dropdown">
+                            <span class="my-dropdown-title">
+                                <span class="text">For Business</span>
+                                <span class="icon icon-chevron-down"></span>
+                                <span class="icon icon-chevron-up"></span>
+                            </span>
+                            <div class="my-dropdown-menu">
+                                <a href="https://allsetnow.com/for-business/" class="allset-mob-nav_item">Learn More</a>
+                                <a href="https://allsetnow.com/corporate/auth/" class="allset-mob-nav_item">Business Dashboard</a>
+                                <a href="https://allsetnow.com/for-business/faq/" class="allset-mob-nav_item">FAQ</a>
+                                <a href="https://allsetnow.com/for-business/terms/" class="allset-mob-nav_item">Terms of Use</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allset-mob-nav_item">
+                        <div class="my-dropdown for-restaurants-dropdown" data-modal="for-restaurants-dropdown" id="for-restaurants-dropdown">
+                            <span class="my-dropdown-title">
+                                <span class="text">For Restaurants</span>
+                                <span class="icon icon-chevron-down"></span>
+                                <span class="icon icon-chevron-up"></span>
+                            </span>
+                            <div class="my-dropdown-menu">
+                                <a href="https://allsetnow.com/for-restaurants/" class="allset-mob-nav_item">Learn More</a>
+                                <a href="https://allsetnow.com/merchant/auth/" class="allset-mob-nav_item">Restaurant Dashboard</a>
+                                <a href="https://allsetnow.com/for-restaurants/faq/" class="allset-mob-nav_item">FAQ</a>
+                                <a href="https://allsetnow.com/for-restaurants/terms/" class="allset-mob-nav_item">Terms of Use</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="allset-mob-nav_item" href="https://allsetnow.com/faq/">FAQ</a>
+                    <a class="allset-mob-nav_item" href="https://allsetnow.com/about/">About</a>
+                    <a class="allset-mob-nav_item" href="https://allsetnow.com/terms/">Terms &amp; Privacy</a>
+                    <a class="allset-mob-nav_item" href="https://medium.com/@allset" target="_blank" rel="nofollow noopener noreferrer">Blog</a>
+                    <div class="allset-mob-nav_item contact-links">
+                        <a href="https://www.facebook.com/allsetnow" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+                            <span class="icon icon-fb"></span>
+                        </a>
+                        <a href="https://twitter.com/allsetUS" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+                            <span class="icon icon-twitter"></span>
+                        </a>
+                        <a href="https://www.instagram.com/allsetnow/" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+                            <span class="icon icon-instagram"></span>
+                        </a>
+                        <a href="mailto:support@allsetnow.com" class="btn" target="_blank" rel="nofollow noopener noreferrer">
+                            <span class="icon icon-envelope-shape"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Load Scripts Start -->
+    <script>var scr = {"scripts":[
+        {"src" : "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js", "async" : false},
+        {"src" : "js/common.js", "async" : false}
+        ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+    <!-- Load Scripts End -->
+
+</body>
+</html>
